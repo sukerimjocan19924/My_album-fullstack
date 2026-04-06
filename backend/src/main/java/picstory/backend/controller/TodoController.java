@@ -9,11 +9,11 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/todos")
+@RequestMapping("/health")
 public class TodoController {
 
     @GetMapping
-    public ResponseEntity<List<String>> getAllTodos() {
-        return ResponseEntity.ok(Collections.emptyList());
+    public ResponseEntity<String> getHealth() {
+        return ResponseEntity.ok("OK");
     }
 }
