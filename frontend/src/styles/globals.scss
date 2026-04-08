@@ -64,7 +64,6 @@ ul {
   padding-bottom: 60px;
   background-color: $fg;
   color: $bg;
-
 }
 
 section {
@@ -102,11 +101,11 @@ section {
   border-radius: 12px;
   border: 1px solid $line;
   background: rgba(255, 255, 255, 0.06);
-  color: $fg;
+  color: $bg;
   outline: none;
 
   &:focus {
-    border-color: rgba(168, 85, 247, 0.55);
+    border-color: rgba(245, 65, 52, 0.55);
   }
 
   &::placeholder {

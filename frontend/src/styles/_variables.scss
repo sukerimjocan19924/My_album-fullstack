@@ -4,12 +4,21 @@
 
 $bg: #ffffff;
 $fg: #000000;
-$muted: rgba(255, 255, 255, 0.65);
+$muted: rgba(0, 0, 0, 0.404);
 
-$purple: #7c3aed;
-$purple-2: #a855f7;
 
-$line: rgba(255, 255, 255, 0.14);
+$orange-1: #FFCE99;
+$orange-2: #FF7329;
+$orange-3: #FF9644;
+$orange-4: #fe5b3e;
+$brown: #562F00;
+$ivory: #FFFDF1;
+
+$button1: #EC3838;
+$button2: #FF23C1;
+
+
+$line: rgba(0, 0, 0, 0.337);
 $card: rgba(255, 255, 255, 0.06);
 
 $error: #ff6b6b;
@@ -60,6 +69,7 @@ $space-xl: 36px;
 // Shadow
 // =============================
 
+$shadow-intro: 0 10px 10px rgba(0, 0, 0, 0.747);
 $shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 $shadow-sm: 0 8px 10px rgba(0, 0, 0, 0.35);
 

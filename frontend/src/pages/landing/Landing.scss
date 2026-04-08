@@ -1,13 +1,33 @@
-section {
-    background-image: url(/images/bg_landing_scrapbook_texture.png); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-clip: border-box;
-}
+@use "@/styles/variables" as *;
 
 .landing {
+    height: 100vh;
+
     .inner {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        max-width: 1490px;
+        gap: 70px;
+        margin: 0 0 0 -100px;
         
+        .intro-img {
+            width: clamp(50%, 60vw, 85%);
+            height: auto;
+        }
+
+        .landing-wrap {
+            .t-wrap {
+                p {
+                    font-size: 28.8px;
+                    margin: 0 0 0 12px;
+                }
+            }
+        }
+
+        .btn.intro {
+            margin: 19.2px 0 0 12px;
+        }
     }
 }
