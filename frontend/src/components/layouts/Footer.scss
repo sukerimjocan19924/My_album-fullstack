@@ -1,0 +1,16 @@
+@use "@/styles/variables" as *;
+
+footer {
+    background-color: $gray-300;
+    padding: $space-md;
+    text-align: center;
+    color: $gray-900;
+    font-size: $text-xs;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-menus {
+        display: flex;
+        gap: $space-sm;
+    }
+}

@@ -1,8 +1,65 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import './Header.scss'
+import Button from '../ui/Button'
+import { logout } from '@/api/auth.api'
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const menus = [
+    {
+      name: '내 메모',
+      link: '/app/memos'
+    },
+    {
+      name: '내 프로필',
+      link: '/app/profile'
+    },
+    {
+      name: '설정',
+      link: '/app/setting'
+    }
+  ]
+
+  const handleLogout = async () => {
+    try {
+      await logout()
+      navigate("/")
+
+    } catch (error) {
+      alert(error.message || '로그아웃 오류')
+    }
+  }
+
   return (
-    <div>Header</div>
+    <header>
+      <div className="inner">
+        <h1>
+          <Link to="/app">
+            <img src="/images/logo2.svg" alt="logo" />
+            <p>추억을 기록하고 간직하는 - albumary</p>
+          </Link>
+        </h1>
+        <div className="right">
+
+          <ul>
+            {menus.map((menu, i) => (
+              <li key={i}>
+                <Button
+                  className="sq"
+                  onClick={() => navigate(menu.link)}
+                  text={menu.name} />
+              </li>
+            ))}
+          </ul>
+          <Button
+            text="로그아웃"
+            className="logout-btn"
+            onClick={handleLogout} />
+        </div>
+      </div>
+    </header>
   )
 }
 
