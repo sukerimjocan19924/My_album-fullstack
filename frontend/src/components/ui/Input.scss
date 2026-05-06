@@ -17,15 +17,35 @@
         font-size: $text-sm;
         outline: none;
         transition: $ease;
-
+        
         &::placeholder{
             color: $muted;
         }
 
         &:focus{
             border-color: $brown;
-            background: $bg-hover;
+            background: $bg-a;
             box-shadow:  0 0 0 2px rgba($brown, .15);
+        }
+    }
+}
+
+.input-post {
+    border-bottom: 1px solid $orange-1;
+    box-shadow: none;
+
+    .input-field {
+        caret-color: $orange-4;
+        font-size: $text-xl;
+        color: $gray-800;
+        
+        &::placeholder {
+            color:$muted;
+            font-size: $text-xl;
+        }
+
+        &:focus {
+            box-shadow: none;
         }
     }
 }

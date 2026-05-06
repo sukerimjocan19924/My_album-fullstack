@@ -1,8 +1,18 @@
 import React from 'react'
+import PostTag from './PostTag'
+import './PostComponentAll.scss'
 
-const TagFilterBar = () => {
+const TagFilterBar = ({tags}) => {
   return (
-    <div>TagFilterBar</div>
+    <div className='tags'>
+      <span>#tag:</span>
+      {tags.map((tag, i) => (
+        <PostTag
+          key={`${tag}-${i}`}
+          tag={tag} />
+      ))}
+
+    </div>
   )
 }
 

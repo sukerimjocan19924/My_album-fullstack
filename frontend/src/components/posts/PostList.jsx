@@ -1,8 +1,14 @@
 import React from 'react'
+import PostCard from './PostCard'
+import './PostComponentAll.scss'
 
-const PostList = () => {
+const PostList = ({posts}) => {
   return (
-    <div>PostList</div>
+    <div className='post-list'>
+      {posts.map((post) => (
+        <PostCard key={post.id} post={post}/>
+      ))}
+    </div>
   )
 }
 

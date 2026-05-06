@@ -1,8 +1,12 @@
 import React from 'react'
+import Button from '@/components/ui/Button'
 
-const PostHeader = () => {
+const PostHeader = ({onCreate}) => {
   return (
-    <div>PostHeader</div>
+    <header className='post-header'>
+      <h2 className='post-title'>새 앨범을 작성하세요</h2>
+      <Button text="새 앨범 작성" className="primary" icons/>
+    </header>
   )
 }
 

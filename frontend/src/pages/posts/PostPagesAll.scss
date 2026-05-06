@@ -1,1 +1,28 @@
 
+@use "@/styles/variables" as *;
+
+.post-section{
+    .inner {
+        max-width: $container-md;
+
+        header {
+            background-color: transparent;
+        }
+
+        .post-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: $space-lg;
+
+            .post-title {
+                font-size: $text-xl;
+                font-weight: $fw-bold;
+            }
+
+            .btn.primary {
+                width: auto;
+            }
+        }
+    }
+}
