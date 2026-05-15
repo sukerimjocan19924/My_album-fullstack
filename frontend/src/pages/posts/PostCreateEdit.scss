@@ -1,0 +1,129 @@
+@use "@/styles/variables" as *;
+
+.post-create,
+.post-edit {
+    .post-form {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $brown;
+        padding: $space-lg;
+        background-color: $ivory;
+
+        .spring-wrap {
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(30px, 3vw, 40px);
+
+            .spring {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: url(/images/bg_scrapbook_texture.png);
+            }
+        }
+
+        .post-card {
+            display: flex;
+            flex-direction: column;
+            gap: $space-md;
+            margin-top: $space-xl;
+
+            .input-field {
+                border: 1px solid $gray-300;
+                padding: 0 $space-md;
+                height: 44px;
+                border-radius: $r-sm;
+
+                &:focus {
+                    border-color: rgba($orange-3, $alpha: 0.55);
+                    background: $bg-a;
+                    box-shadow: 0 0 0 2px rgba($color: $orange-3, $alpha: .12);
+                }
+
+                &::placeholder {
+                    color: rgba($color: $fg, $alpha: .45)
+                }
+            }
+
+            .post-field {
+                display: flex;
+                flex-direction: column;
+                gap: $space-md;
+
+                .post-label {
+                    font-size: $text-sm;
+                    color: $gray-800;
+                    font-weight: $fw-medium;
+                    margin-top: $space-lg;
+                }
+
+                .post-input-wrap {
+                    width: 100%;
+
+                    select {
+                        width: 100%;
+                        border: 1px solid $gray-200;
+                        padding: 0 $space-md;
+                        height: 44px;
+                        border-radius: $r-sm;
+                    }
+
+                    .post-textarea {
+                        border: 1px solid $gray-200;
+                        padding: 0 $space-md;
+                        height: 44px;
+                        border-radius: $r-sm;
+                        width: 100%;
+                        min-height: 160px;
+
+                        &:focus {
+                            outline: none;
+                            border-color: rgba($orange-3, 0.55);
+                            box-shadow: 0 0 0 2px rgba($orange-3, .12);
+                        }
+                    }
+
+                }
+            }
+
+            .post-upload-card {
+                border: 1px solid $gray-200;
+                padding: $space-md;
+                border-radius: $r-sm;
+                background-color: $gray-50;
+
+                .post-upload-placeholder {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: $space-md;
+                    cursor: pointer;
+
+                    .post-uppload-input {
+                        display: none;
+                    }
+
+                    .post-upload-title {
+                        font-size: $text-md;
+                        font-weight: $fw-medium;
+                        color: $gray-700
+                    }
+                }
+            }
+
+            .post-actions {
+                display: flex;
+                // justify-content: space-between;
+                justify-content: right;
+                gap: $space-md;
+
+                .btn {
+                    // flex: 1;
+                }
+            }
+        }
+    }
+}

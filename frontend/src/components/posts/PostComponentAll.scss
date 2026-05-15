@@ -5,13 +5,16 @@
     gap: $space-sm;
     margin-top: $space-xl;
     color: $fg;
+    align-items: center;
+    flex-wrap: wrap;
 
     .post-tag {
         display: inline-flex;
         background-color: $bg;
-        padding: 1px $space-sm;
+        padding: $space-sm $space-md;
         gap: $space-sm;
         border-radius: $r-lg;
+        align-items: center;
         border: 1px solid $gray-200;
 
         .post-tag-delete {
@@ -21,6 +24,27 @@
             padding: 0 2px;
             background-color: transparent;
             font-size: 1rem;
+        }
+    }
+
+    .btn.post-tag-add {
+        border: 1px solid $gray-200;
+        padding: $space-sm $space-md;
+        color: $gray-500;
+        gap: $space-md;
+
+    }
+
+    .post-tag-input {
+        border-radius: $r-lg;
+        padding: $space-sm $space-md;
+        min-width: 150px;
+        border: 1px solid $gray-200;
+        outline: none;
+
+        &:focus {
+            border-color: rgba($orange-3, $alpha: 0.55);
+            box-shadow: 0 0 0 2px rgba($color: $orange-3, $alpha: .12);
         }
     }
 }

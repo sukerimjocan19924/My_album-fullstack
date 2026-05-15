@@ -48,6 +48,14 @@
             box-shadow: $shadow-sm;
         }
     }
+
+    &.cancel {
+        background-color: $error;
+    }
+
+    &.save {
+        background-color: $success;
+    }
 }
 
 .bbh, .fbh {
