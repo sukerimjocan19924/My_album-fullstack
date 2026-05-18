@@ -14,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: clamp(30px, 3vw, 40px);
+            gap: clamp(30px, 4vw, 40px);
 
             .spring {
                 width: 14px;
@@ -35,6 +35,7 @@
                 padding: 0 $space-md;
                 height: 44px;
                 border-radius: $r-sm;
+                color: $gray-800;
 
                 &:focus {
                     border-color: rgba($orange-3, $alpha: 0.55);
@@ -72,7 +73,7 @@
 
                     .post-textarea {
                         border: 1px solid $gray-200;
-                        padding: 0 $space-md;
+                        padding: $space-sm $space-md;
                         height: 44px;
                         border-radius: $r-sm;
                         width: 100%;

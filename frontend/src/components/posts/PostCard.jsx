@@ -4,7 +4,7 @@ import PostTag from './PostTag'
 
 const PostCard = ({post}) => {
   return (
-    <Link className='post-card'>
+    <Link to={`/app/posts/${post.id}`} className='post-card'>
       <article>
         <div className="img-card-wrap">
           <div className="img-wrap">

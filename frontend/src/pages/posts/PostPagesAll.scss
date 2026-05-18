@@ -25,4 +25,63 @@
             }
         }
     }
+
+    &.post-detail {
+        .inner {
+            .spring-wrap {
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: clamp(30px, 4vw, 40px);
+
+                .spring {
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background: url(/images/bg_scrapbook_texture.png);
+                }
+            }
+
+            .post-card {
+                margin-top: $space-xl;
+                display: flex;
+                flex-direction: column;
+                gap: $space-lg;
+                border: 1px solid $brown;
+                padding: $space-lg;
+                color: $fg;
+                background-color: $ivory;
+
+                .post-card-title {
+                    font-size: $text-xl;
+                    color: $brown;
+                }
+
+                .post-card-content {
+                    min-height: 200px;
+                    background-color: $bg;
+                    padding: $space-md;
+                    margin-top: $space-md;
+                    border: 1px solid $orange-1;
+                }
+
+                .img-wrap {
+                    margin: $space-md 0;
+                }
+            }
+
+            .btn-wrap {
+                margin-top: $space-xl;
+                display: flex;
+                justify-content: space-between;
+                // justify-content: right;
+                gap: $space-md;
+
+                .btn {
+                    flex: 1;
+                }
+            }
+        }
+    }
 }

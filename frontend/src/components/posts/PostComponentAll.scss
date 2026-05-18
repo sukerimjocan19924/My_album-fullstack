@@ -114,6 +114,8 @@
                 overflow: hidden;
                 margin-bottom: $space-md;
                 padding: 5.9px 11.8px;
+                min-width: 550px;
+                min-height: 80px;
             }
         }
     }
@@ -124,7 +126,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: clamp(30px, 4vw, 40px);
 
         .spring {
             width: 14px;
